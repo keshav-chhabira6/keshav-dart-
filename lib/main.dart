@@ -31,7 +31,6 @@ class MyApp extends StatelessWidget {
           children: [
             const SizedBox(height: 20),
 
-            // Container for header image
             Container(
               margin: const EdgeInsets.symmetric(horizontal: 50),
               padding: const EdgeInsets.all(10),
@@ -47,7 +46,7 @@ class MyApp extends StatelessWidget {
                   child: ClipRRect(
                     borderRadius: BorderRadius.circular(10),
                     child: Image.asset(
-                      'assets/leaves.jpg', // Path to your image
+                      'assets/leaves.jpg', 
                       height: 120,
                       width: 200,
                       fit: BoxFit.cover,
@@ -59,7 +58,6 @@ class MyApp extends StatelessWidget {
 
             const SizedBox(height: 40),
 
-            // Stack with overlapping boxes and numbers
             Stack(
               children: [
                 Container(
@@ -120,15 +118,12 @@ class MyApp extends StatelessWidget {
                     ),
                   ),
                   const SizedBox(
-                      height: 20), // Space between text and green box
-
-                  // Row for the footer
+                      height: 20), 
                   Container(
                     color: Colors.green,
                     padding: const EdgeInsets.symmetric(
                         vertical: 20,
-                        horizontal: 10), // Padding around the content
-                    child: Row(
+                        horizontal: 10), 
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         const Text(
@@ -141,8 +136,7 @@ class MyApp extends StatelessWidget {
                         ),
                         ClipOval(
                           child: Image.asset(
-                            'assets/tree.jpg', // Path to your circular image
-                            height: 80,
+                            'assets/tree.jpg', 
                             width: 80,
                             fit: BoxFit.cover,
                           ),
